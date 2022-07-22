@@ -2,13 +2,14 @@ import React, {useState, useEffect} from 'react'
 import axios from './axios';
 import requests from './request';
 import './banner.css'
+
 const baseURL = "https://image.tmdb.org/t/p/original/";
 function Banner() {
     const [movie, setMovie] = useState([]);
 
     useEffect(() => {
         async function fetchData(){
-            const request = await axios.get(requests.fetchTopRated);
+            const request = await axios.get(requests.fetchNetflixOriginals);
             console.log(request.data.results);
             setMovie(
                 request.data.results[
@@ -24,9 +25,7 @@ function Banner() {
   return (
     <header className="banner"
     style={{
-        backgroundSize: "cover",
         background: `url("http://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
-        backgroundPosition: "center center",
     }}
     >
         {/* <img classNamesrc={`${baseURL}${movie.backdrop_path}`} alt='movie.name'/> */}
