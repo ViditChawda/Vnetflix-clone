@@ -8,3 +8,46 @@
     background-position: top !important;
     background-repeat: no-repeat !important;
 }
+
+.banner-contents{
+    margin-left: 30px;
+    text-align: left;
+    padding-top: 140px;
+    height: 190px;
+}
+
+.banner-title{
+    font-size: 3 rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+}
+
+.banner-caption{
+    width: 45 rem;
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    max-width: 360px;
+    height: 80px;
+}
+
+.banner_button{
+    cursor: pointer;
+    color: white;
+    outline: none;
+    margin-top: 10px;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding: 15px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(51, 51, 51, 0.66);
+    margin-right: 20px;
+}
+
+.banner_button:hover{
+    color : #000;
+    background-color: #e6e6e6;
+    transition: all 0.2s;
+}

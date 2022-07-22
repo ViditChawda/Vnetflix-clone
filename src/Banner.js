@@ -30,7 +30,7 @@ function Banner() {
     >
         {/* <img classNamesrc={`${baseURL}${movie.backdrop_path}`} alt='movie.name'/> */}
         <div className="banner-contents">
-            <h1>
+            <h1 className='banner-title'>
                 {movie?.title || movie?.name || movie?.orignal_name}
             </h1>
             <div className="banner-buttons">
@@ -40,18 +40,7 @@ function Banner() {
             <h1 className='banner-caption'>
                 {movie?.overview}
             </h1>
-        </div>
-       
-        {/* {
-            movie.map(movie => {
-                return (
-                    <img src={`${baseURL}${movie.backdrop_path}`} alt={movie.title}/>)
-            })
-        } */}
-        {/* background image */}
-        {/* title */}
-        {/* div > 2 buttons */}
-        {/* description */}
+        </div> 
     </header>
   )
 }
