@@ -3,7 +3,7 @@
     color: white;
     /* object-fit: contain; */
     width: 100%;
-    height: 470px;   
+    height: 400px;   
     background-size: cover!important;
     background-position: top !important;
     background-repeat: no-repeat !important;
@@ -50,4 +50,14 @@
     color : #000;
     background-color: #e6e6e6;
     transition: all 0.2s;
+}
+
+.banner-fade-bottom{
+    height: 7.4 rem;
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        rgba(37, 37, 37 ,0.61),
+        #111,
+    );
 }
